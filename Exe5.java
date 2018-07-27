@@ -4,25 +4,25 @@
  * and open the template in the editor.
  */
 
-package exe2;
-    import java.util.Scanner;
+package exe5;
+import java.util.Scanner;
 /**
  *
- * 
+ * @author Pedro
  */
-public class Exe2 {
-     /**
+public class Exe5 {
+
+    /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        String num;
         System.out.println("Insira o numero: ");
-        int x,i,tabu;
-        Scanner sc = new Scanner(System.in);
-        x = sc.nextInt();
-        System.out.println("Tabuada:");
-        for(i=0; i<=100; i++){
-            tabu=i*x;
-            System.out.println(tabu);
+        Scanner n= new Scanner(System.in);
+        num = n.nextLine();
+        char[] letras = num.toCharArray();
+        for(int i=0; i<num.length();i++){
+            System.out.println(letras [i]);
         }
     }
     
